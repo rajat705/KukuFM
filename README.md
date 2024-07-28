@@ -45,13 +45,13 @@ Follow these steps to set up and run the project on your local machine.
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/yourusername/kukufm-clone.git
+    [git clone https://github.com/rajat705/KukuFM.git
     ```
 
 2. Navigate to the project directory:
 
     ```sh
-    cd kukufm-clone
+    cd KukuFM
     ```
 
 3. Install the dependencies:
