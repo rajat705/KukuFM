@@ -1,16 +1,15 @@
-// components/MobileMenu.js
 import styled from 'styled-components';
 
 const MobileMenuWrapper = styled.div`
   position: fixed;
   top: 0;
-  right: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
   width: 250px; /* Adjust this value as needed */
   max-width: 80%;
   height: 100%;
   background: white;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: right 0.3s ease-in-out;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: left 0.3s ease-in-out;
   z-index: 1500;
   padding: 1rem;
   display: flex;
@@ -25,6 +24,7 @@ const MobileMenuWrapper = styled.div`
     font-size: 1.5rem;
     align-self: flex-end;
     cursor: pointer;
+    color: #ff5733;
   }
 
   a {
@@ -32,6 +32,27 @@ const MobileMenuWrapper = styled.div`
     color: black;
     font-size: 1.2rem;
     font-weight: 500;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: #f9f9f9;
+    }
+  }
+
+  .highlight {
+    background-color: #ffecec;
+    color: #ff5733;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .logo {
@@ -49,6 +70,14 @@ const MobileMenuWrapper = styled.div`
       margin-left: 0.3rem;
     }
   }
+
+  .copy {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+  }
 `;
 
 const MobileMenu = ({ isOpen, onClose }) => (
@@ -57,7 +86,10 @@ const MobileMenu = ({ isOpen, onClose }) => (
     <div className="logo">
       Kuku<span>FM</span>
     </div>
-    <a href="#login">Login / Signup</a>
+    <a href="#login" className="highlight">
+      Login / Signup
+      <span>→</span>
+    </a>
     <a href="#free-trial">Get Free Trial</a>
     <a href="#creators">For Creators</a>
     <a href="#about">About</a>
@@ -66,7 +98,7 @@ const MobileMenu = ({ isOpen, onClose }) => (
     <a href="#blog">Blog</a>
     <a href="#download">Download KukuFM app</a>
     <a href="#careers">Careers 🚀</a>
-    <div className="copy">Made with ❤️ in India</div>
+    <div className="copy">Developed by Rajat Nagar ❤️</div>
   </MobileMenuWrapper>
 );
 

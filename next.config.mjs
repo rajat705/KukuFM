@@ -1,6 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-};
+import withImages from 'next-images';
 
-export default nextConfig;
+export default withImages({
+  images: {
+    domains: ['d31ntp24xvh0tq.cloudfront.net'],
+  },
+});
