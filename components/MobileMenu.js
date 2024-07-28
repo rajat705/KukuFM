@@ -29,7 +29,7 @@ const MobileMenuWrapper = styled.div`
 
   a {
     text-decoration: none;
-    color: #ff5733;
+    color: black;
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -64,9 +64,9 @@ const MobileMenu = ({ isOpen, onClose }) => (
     <a href="#legal">Legal</a>
     <a href="#support">Help & Support</a>
     <a href="#blog">Blog</a>
-    <a href="#download">Download Kuku FM app</a>
+    <a href="#download">Download KukuFM app</a>
     <a href="#careers">Careers 🚀</a>
-    <div>Made with ❤️ in India</div>
+    <div className="copy">Made with ❤️ in India</div>
   </MobileMenuWrapper>
 );
 
