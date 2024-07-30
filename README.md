@@ -2,6 +2,11 @@
 
 A Improvement of the KukuFM website with a focus on creating a functional, responsive, and performant landing page using Next.js. This project features an infinite scroll, auto slider carousel, header, footer, and more.
 
+## Deployment Side
+```sh
+    https://kuku-fm.vercel.app/
+```
+
 ## Objectives
 
 The main objective is to create a better version of kukufm.com landing page which is functional, responsive, and performant web page with the following features:
