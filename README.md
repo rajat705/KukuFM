@@ -4,7 +4,7 @@ A Improvement of the KukuFM website with a focus on creating a functional, respo
 
 ## Deployment Side
 ```sh
-    https://kuku-fm.vercel.app/
+    https://kuku-fm-rajat-nagars-projects.vercel.app
 ```
 
 ## Objectives
