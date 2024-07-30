@@ -38,14 +38,14 @@ Follow these steps to set up and run the project on your local machine.
 ### Prerequisites
 
 - Node.js (v14.x or later)
-- npm (v6.x or later) or yarn (v1.22.x or later)
+- npm (v6.x or later)
 
 ### Installation
 
 1. Clone the repository:
 
     ```sh
-    [git clone https://github.com/rajat705/KukuFM.git
+    git clone https://github.com/rajat705/KukuFM.git
     ```
 
 2. Navigate to the project directory:
@@ -93,10 +93,11 @@ Follow these steps to set up and run the project on your local machine.
 ## API Reference
 
 Using the following API for fetching data:
-GET https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hindi&page=1&lang=english
+GET https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hindi&page=1&lang=engli
 
 ## Important Links
 
+- [Deployment Site](https://kuku-fm.vercel.app/)
 - [KukuFM Original Site](https://kukufm.com)
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React.js Documentation](https://reactjs.org/docs/getting-started.html)
@@ -131,11 +132,11 @@ GET https://d31ntp24xvh0tq.cloudfront.net/api/v2.1/home/all/?preferred_langs=hin
 - Include branding elements such as a logo and site name.
 - Provide navigation links to different sections of the site.
 - Ensure the header is fixed at the top and remains visible as the user scrolls.
-
+<!--
 ## Contributing
 
 Contributions are welcome! If you have any ideas, suggestions, or improvements, feel free to open an issue or submit a pull request.
-
+-->
 
 ## Contact 
  <h3 align="center">
