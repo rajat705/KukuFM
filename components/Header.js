@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import MobileMenu from './MobileMenu';
-import Modal from './Modal';  // Import the Modal component
+import Modal from './Modal'; 
 
 const HeaderWrapper = styled.header`
   position: fixed;
@@ -14,6 +14,11 @@ const HeaderWrapper = styled.header`
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 1000;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const Logo = styled.div`
@@ -29,6 +34,10 @@ const Logo = styled.div`
     padding: 0 0.2rem;
     border-radius: 4px;
     margin-left: 0.3rem;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -228,7 +237,7 @@ const Header = () => {
           <a href="#buy-coins">Buy Coins</a>
           <a href="#login" onClick={handleLoginClick}>Login / Signup</a>  {/* Updated button */}
           <div className="download-icon">⬇</div>
-        </NavLinks>
+          </NavLinks>
       </HeaderWrapper>
       <MobileMenu isOpen={isMenuOpen} onClose={() => setMenuOpen(false)} />
       <Modal show={isModalOpen} onClose={() => setModalOpen(false)} />  {/* Include modal */}
